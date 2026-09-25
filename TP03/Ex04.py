@@ -67,8 +67,8 @@ def afficher_pendu(vies_restantes):
            ------
            |    |
            |    O
-           |   /|\\
-           |   / \\
+           |   /|\
+           |   / \
            |
         --------
         """,
@@ -76,7 +76,7 @@ def afficher_pendu(vies_restantes):
            ------
            |    |
            |    O
-           |   /|\\
+           |   /|\
            |   / 
            |
         --------
@@ -85,7 +85,7 @@ def afficher_pendu(vies_restantes):
            ------
            |    |
            |    O
-           |   /|\\
+           |   /|\
            |    
            |
         --------
