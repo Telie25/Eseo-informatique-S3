@@ -15,8 +15,6 @@ def replace(mot,id,replacement):
 def strip_accents(s):
    return ''.join(c for c in unicodedata.normalize('NFD', s)
                   if unicodedata.category(c) != 'Mn')
-
-
 def print_mot(L):
     answer=''
     for i in range (len(L)):
@@ -121,10 +119,8 @@ dico = mots_du_fichier('dic.txt')
 mot=random.choice(dico)
 mot=mot.upper()
 mot=strip_accents(mot)
-print(mot)
 vies=7
 cache=create_cache(mot)
-print(mot,cache)
 print(cache)
 histo=[]
 
