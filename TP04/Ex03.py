@@ -45,10 +45,7 @@ class Card:
         self.pts=pts
         self.i=i
     def __str__(self):
-        a=CardColor(self.i)
-        f=a.foreground_color
-        b='on_'+a.background_color
-        return colored(CardValue(self.pts).value_txt+CardColor(self.i).shade,f,b)
+        return colored(CardValue(self.pts).value_txt+CardColor(self.i).shade,CardColor(self.i).foreground_color,'on_'+CardColor(self.i).background_color)
     def __repr__(self):
         return CardValue(self.pts).value_txt+CardColor(self.i).shade_name 
     def __eq__(self,other):
